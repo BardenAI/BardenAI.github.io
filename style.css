@@ -1,138 +1,220 @@
+/* Reset CSS */
 html {
   height: 100%;
 }
 
 body {
   overflow-x: hidden;
-  font-family: "TiffanyFont", sans-serif;
-  background-color: #f2f6f7; /* Tiffany藍色或類似的藍綠色調的背景色 */
-  color: #333; /* 文字顏色 */
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.cloak {
-  display: block;
-}
-
-hr {
-  width: 70px;
-  border-color: #1ab7ca; /* Tiffany藍色或類似的藍綠色調 */
-  border-width: 2px;
-  height: 2px;
-}
-
-.bannerBtn {
-  border: none;
-  background: #1ab7ca; /* Tiffany藍色或類似的藍綠色調 */
-  color: white;
-  padding: 10px 20px;
-}
-.bannerBtn:hover {
-  background: #536b25; /* 按鈕的hover背景色 */
-}
-
-.inputInline {
-  width: 49%;
-  float: left;
-}
-
-.navbar-btn {
-  padding-top: 13px;
-  margin: 0 10px 0 0;
-  color: #9d9d9d;
-  font-size: 18px;
-}
-.navbar-btn:hover {
-  color: #1ab7ca; /* 鏈接hover顏色 */
-}
-
+/* Navigation Bar */
 .navbar {
-  background: #131413; /* 導航欄背景色 */
+  background: #d8cfc9; /* Tiffany blue */
 }
-.navbar .navbar-toggle {
-  border-color: #1ab7ca; /* 導航欄toggle按鈕的顏色 */
-}
-.navbar .navbar-toggle .icon-bar {
-  background-color: #1ab7ca; /* 導航欄toggle按鈕的icon背景色 */
-}
+
 .navbar .navbar-brand {
-  color: #ffffff; /* 導航欄品牌文字顏色 */
+  color: #fff; /* White */
   font-weight: 900;
 }
+
 .navbar .navbar-brand:hover {
-  color: #1ab7ca; /* 導航欄品牌文字hover顏色 */
-}
-.navbar .navActive {
-  color: #1ab7ca; /* 導航欄當前頁面的顏色 */
+  color: #d8cfc9; /* Tiffany blue */
 }
 
-.parallax, .parallaxSection, .parallaxTop {
+.navbar .navbar-toggle .icon-bar {
+  background-color: #fff; /* White */
+}
+
+.navbar .navActive {
+  color: #d8cfc9; /* Tiffany blue */
+}
+
+/* Jumbo Banner */
+.parallaxTop {
+  background-image: url("1.png");
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0;
-}
-.parallaxTop {
-  background-image: url("tiffany_banner.png"); /* Tiffany風格的橫幅圖片 */
-  min-height: 100vh;
-}
-
-.parallaxSection {
-  min-height: 250px;
-}
-
-.shadow, .shadowSection {
-  background: rgba(26, 183, 202, 0.8); /* Tiffany藍色或類似的藍綠色調的半透明背景色 */
-  min-height: 100vh;
-  width: 100%;
-}
-
-.shadowSection {
-  min-height: 250px;
 }
 
 .jumboBanner {
   text-align: center;
-}
-.jumboBanner .banner {
-  color: #1ab7ca; /* 標語的顏色 */
+  color: white;
   padding-top: 30vh;
-  text-align: center;
-  font-size: 112px;
+}
+
+.jumboBanner .banner {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 72px;
   margin-top: 0;
 }
+
 .jumboBanner .motto {
-  color: #1ab7ca; /* motto的顏色 */
+  color: white;
   margin: 50px auto;
 }
 
-/* 其他樣式按照您的需求進行調整 */
+/* About Section */
+#aboutBlock {
+  width: 94%;
+}
 
-/* 媒體查詢 */
-@media screen and (max-width: 766px) {
+#aboutRow, .aboutLeft, .aboutRight, .aboutImg {
+  min-height: 400px;
+  margin: 20px auto;
+}
+
+#aboutRow hr, .aboutLeft hr, .aboutRight hr, .aboutImg hr {
+  margin-left: 0;
+  text-align: left;
+}
+
+#aboutRow .aboutImg, .aboutLeft .aboutImg, .aboutRight .aboutImg, .aboutImg .aboutImg {
+  background-image: url("https://images.pexels.com/photos/59628/pexels-photo-59628.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+}
+
+/* Services Section */
+#servicesRow {
+  background-image: url("https://images.pexels.com/photos/247932/pexels-photo-247932.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  text-align: center;
+  color: white;
+}
+
+#servicesRow h2 {
+  padding-top: 100px;
+}
+
+#serviceBlocks .container {
+  width: 94%;
+}
+
+.serviceBlock {
+  text-align: center;
+  margin: 20px auto 50px auto;
+  padding: 25px;
+}
+
+.serviceBlock img {
+  width: 100px;
+  height: 100px;
+  margin: 10px 0 20px 0;
+}
+
+.serviceBlock p {
+  font-size: 18px;
+}
+
+/* Phone Contact Section */
+.phoneContact {
+  background: #d8cfc9; /* Tiffany blue */
+  text-align: center;
+  color: white;
+  min-height: 200px;
+}
+
+.phoneContact h2 {
+  margin: 100px 0;
+}
+
+/* Contact Form Section */
+#contactRow {
+  margin: 50px auto;
+  text-align: center;
+}
+
+#contactRow h2 {
+  margin: 0 auto;
+}
+
+#contactRow form {
+  width: 75%;
+  margin: 50px auto 0 auto;
+}
+
+#contactRow form input {
+  margin-bottom: 2%;
+}
+
+#contactRow form input[name=name] {
+  margin-right: 2%;
+}
+
+/* Contact Info Section */
+#contactInfo {
+  background: #d8cfc9; /* Tiffany blue */
+  min-height: 200px;
+}
+
+#contactInfo .contactStack {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+#contactInfo h4 {
+  color: #fff; /* White */
+}
+
+#contactInfo p {
+  color: #9d9d9d;
+}
+
+/* Copyright Section */
+#socialBtn a {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 30px 5px 0px 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#facebook {
+  background-image: url("http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico");
+}
+
+#twitter {
+  background-image: url("http://www.freeiconspng.com/uploads/twitter-icon-twitter-icon-7.png");
+}
+
+#linkedin {
+  background-image: url("https://pbs.twimg.com/profile_images/614583061448036352/CBpFkPaz.png");
+}
+
+.socialBtn a {
+  height: 50px;
+  width: 50px;
+  border: none;
+  margin: 30px 5px 0px 5px;
+}
+
+.socialBtn img {
+  height: 50px;
+  width: 50px;
+  border: none;
+  margin: 30px 5px 0px 5px;
+}
+
+.socialBtn p {
+  margin: 30px 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
   .jumboBanner .banner {
-    font-size: 72px;
-  }
-
-  .cloak {
-    display: none;
+    font-size: 42px;
   }
 }
+
 @media screen and (max-width: 500px) {
-  .inputInline {
-    width: 100%;
-    float: none;
-  }
-
-  form input {
-    margin-bottom: 5%;
-  }
-
-  input[name=submit] {
-    width: 100%;
-  }
-
-  input[name=name] {
-    margin-right: 0%;
+  .serviceBlock {
+    margin-bottom: 20px;
   }
 }
