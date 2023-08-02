@@ -1,49 +1,50 @@
-//All images taken from PEXELS.COM - free stock images
 "use strict";
 
-window.onload = function() {
+window.onload = function () {
+  // Navigation bar buttons
+  var about = document.querySelector("#navAbout");
+  var services = document.querySelector("#navServices");
+  var contact = document.querySelector("#navContact");
 
+  about.onclick = function () {
+    document.querySelector("#aboutRow").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
 
-//Navigation bar buttons
-var about = document.querySelector("#navAbout");
-var services = document.querySelector("#navServices");
-var contact = document.querySelector("#navContact");
+  services.onclick = function () {
+    document.querySelector("#servicesRow").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
 
-about.onclick = function() {
-  document.querySelector("#aboutRow").scrollIntoView();
-  window.scrollBy(0, -50);
-}
+  contact.onclick = function () {
+    document.querySelector("#phoneContact").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
 
-services.onclick = function() {
-  document.querySelector("#servicesRow").scrollIntoView();
-  window.scrollBy(0, -50);
-}
+  // Learn more jumbotron button jump to about div
+  var bannerBtn = document.querySelector("#bannerBtn");
+  bannerBtn.onclick = function () {
+    document.querySelector("#aboutRow").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
 
-contact.onclick = function() {
-  document.querySelector("#phoneContact").scrollIntoView();
-  window.scrollBy(0, -50);
-}
+  // Clear input on click in the form
+  var formName = document.querySelector("#formName");
+  formName.onclick = function () {
+    formName.value = "";
+  }
 
-//Learn more jumbotron button jump to about div
-var bannerBtn = document.querySelector("#bannerBtn");
-bannerBtn.onclick = function() {
-  document.querySelector("#aboutRow").scrollIntoView();
-  window.scrollBy(0, -50);
-}
+  var formEmail = document.querySelector("#formEmail");
+  formEmail.onclick = function () {
+    formEmail.value = "";
+  }
 
-//Clear input on click in the form
-var formName = document.querySelector("#formName");
-formName.onclick = function() {
-  formName.value = "";
-}
-
-var formEmail = document.querySelector("#formEmail");
-formEmail.onclick = function() {
-  formEmail.value = "";
-}
-
-var formMessage = document.querySelector("#formMessage");
-formMessage.onclick = function() {
-  formMessage.value = "";
-}
+  var formMessage = document.querySelector("#formMessage");
+  formMessage.onclick = function () {
+    formMessage.value = "";
+  }
 }
