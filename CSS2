@@ -1,0 +1,138 @@
+html {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "TiffanyFont", sans-serif;
+  background-color: #f2f6f7; /* Tiffany藍色或類似的藍綠色調的背景色 */
+  color: #333; /* 文字顏色 */
+}
+
+.cloak {
+  display: block;
+}
+
+hr {
+  width: 70px;
+  border-color: #1ab7ca; /* Tiffany藍色或類似的藍綠色調 */
+  border-width: 2px;
+  height: 2px;
+}
+
+.bannerBtn {
+  border: none;
+  background: #1ab7ca; /* Tiffany藍色或類似的藍綠色調 */
+  color: white;
+  padding: 10px 20px;
+}
+.bannerBtn:hover {
+  background: #536b25; /* 按鈕的hover背景色 */
+}
+
+.inputInline {
+  width: 49%;
+  float: left;
+}
+
+.navbar-btn {
+  padding-top: 13px;
+  margin: 0 10px 0 0;
+  color: #9d9d9d;
+  font-size: 18px;
+}
+.navbar-btn:hover {
+  color: #1ab7ca; /* 鏈接hover顏色 */
+}
+
+.navbar {
+  background: #131413; /* 導航欄背景色 */
+}
+.navbar .navbar-toggle {
+  border-color: #1ab7ca; /* 導航欄toggle按鈕的顏色 */
+}
+.navbar .navbar-toggle .icon-bar {
+  background-color: #1ab7ca; /* 導航欄toggle按鈕的icon背景色 */
+}
+.navbar .navbar-brand {
+  color: #ffffff; /* 導航欄品牌文字顏色 */
+  font-weight: 900;
+}
+.navbar .navbar-brand:hover {
+  color: #1ab7ca; /* 導航欄品牌文字hover顏色 */
+}
+.navbar .navActive {
+  color: #1ab7ca; /* 導航欄當前頁面的顏色 */
+}
+
+.parallax, .parallaxSection, .parallaxTop {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+.parallaxTop {
+  background-image: url("tiffany_banner.png"); /* Tiffany風格的橫幅圖片 */
+  min-height: 100vh;
+}
+
+.parallaxSection {
+  min-height: 250px;
+}
+
+.shadow, .shadowSection {
+  background: rgba(26, 183, 202, 0.8); /* Tiffany藍色或類似的藍綠色調的半透明背景色 */
+  min-height: 100vh;
+  width: 100%;
+}
+
+.shadowSection {
+  min-height: 250px;
+}
+
+.jumboBanner {
+  text-align: center;
+}
+.jumboBanner .banner {
+  color: #1ab7ca; /* 標語的顏色 */
+  padding-top: 30vh;
+  text-align: center;
+  font-size: 112px;
+  margin-top: 0;
+}
+.jumboBanner .motto {
+  color: #1ab7ca; /* motto的顏色 */
+  margin: 50px auto;
+}
+
+/* 其他樣式按照您的需求進行調整 */
+
+/* 媒體查詢 */
+@media screen and (max-width: 766px) {
+  .jumboBanner .banner {
+    font-size: 72px;
+  }
+
+  .cloak {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .inputInline {
+    width: 100%;
+    float: none;
+  }
+
+  form input {
+    margin-bottom: 5%;
+  }
+
+  input[name=submit] {
+    width: 100%;
+  }
+
+  input[name=name] {
+    margin-right: 0%;
+  }
+}
