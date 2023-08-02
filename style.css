@@ -51,6 +51,7 @@ body {
 .jumboBanner .banner {
   font-family: 'Open Sans', sans-serif;
   font-size: 72px;
+}
   margin-top: 0;
 }
 
@@ -78,13 +79,12 @@ body {
   background-image: url("https://images.pexels.com/photos/59628/pexels-photo-59628.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
   background-repeat: no-repeat;
   background-size: 90% 90%;
-}
+  color: white;
 
 /* Services Section */
 #servicesRow {
   background-image: url("https://images.pexels.com/photos/247932/pexels-photo-247932.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
   text-align: center;
-  color: white;
 }
 
 #servicesRow h2 {
