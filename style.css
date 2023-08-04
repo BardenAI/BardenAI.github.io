@@ -1,220 +1,28 @@
-/* Reset CSS */
-html {
-  height: 100%;
-}
-
 body {
-  overflow-x: hidden;
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Navigation Bar */
-.navbar {
-  background: #d8cfc9; /* Tiffany blue */
-}
-
-.navbar .navbar-brand {
-  color: #fff; /* White */
-  font-weight: 900;
-}
-
-.navbar .navbar-brand:hover {
-  color: #d8cfc9; /* Tiffany blue */
-}
-
-.navbar .navbar-toggle .icon-bar {
-  background-color: #fff; /* White */
-}
-
-.navbar .navActive {
-  color: #d8cfc9; /* Tiffany blue */
-}
-
-/* Jumbo Banner */
-.parallaxTop {
-  background-image: url("1.png");
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.jumboBanner {
-  text-align: center;
-  color: white;
-  padding-top: 30vh;
-}
-
-.jumboBanner .banner {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 72px;
-}
-  margin-top: 0;
-}
-
-.jumboBanner .motto {
-  color: white;
-  margin: 50px auto;
-}
-
-/* About Section */
-#aboutBlock {
-  width: 94%;
-}
-
-#aboutRow, .aboutLeft, .aboutRight, .aboutImg {
-  min-height: 400px;
-  margin: 20px auto;
-}
-
-#aboutRow hr, .aboutLeft hr, .aboutRight hr, .aboutImg hr {
-  margin-left: 0;
-  text-align: left;
-}
-
-#aboutRow .aboutImg, .aboutLeft .aboutImg, .aboutRight .aboutImg, .aboutImg .aboutImg {
-  background-image: url("https://images.pexels.com/photos/59628/pexels-photo-59628.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-  background-repeat: no-repeat;
-  background-size: 90% 90%;
-  color: white;
-
-/* Services Section */
-#servicesRow {
-  background-image: url("https://images.pexels.com/photos/247932/pexels-photo-247932.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-  text-align: center;
-}
-
-#servicesRow h2 {
-  padding-top: 100px;
-}
-
-#serviceBlocks .container {
-  width: 94%;
-}
-
-.serviceBlock {
-  text-align: center;
-  margin: 20px auto 50px auto;
-  padding: 25px;
-}
-
-.serviceBlock img {
-  width: 100px;
-  height: 100px;
-  margin: 10px 0 20px 0;
-}
-
-.serviceBlock p {
-  font-size: 18px;
-}
-
-/* Phone Contact Section */
-.phoneContact {
-  background: #d8cfc9; /* Tiffany blue */
-  text-align: center;
-  color: white;
-  min-height: 200px;
-}
-
-.phoneContact h2 {
-  margin: 100px 0;
-}
-
-/* Contact Form Section */
-#contactRow {
-  margin: 50px auto;
-  text-align: center;
-}
-
-#contactRow h2 {
-  margin: 0 auto;
-}
-
-#contactRow form {
-  width: 75%;
-  margin: 50px auto 0 auto;
-}
-
-#contactRow form input {
-  margin-bottom: 2%;
-}
-
-#contactRow form input[name=name] {
-  margin-right: 2%;
-}
-
-/* Contact Info Section */
-#contactInfo {
-  background: #d8cfc9; /* Tiffany blue */
-  min-height: 200px;
-}
-
-#contactInfo .contactStack {
-  margin: 50px 0;
-  text-align: center;
-  font-size: 16px;
-}
-
-#contactInfo h4 {
-  color: #fff; /* White */
-}
-
-#contactInfo p {
-  color: #9d9d9d;
-}
-
-/* Copyright Section */
-#socialBtn a {
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  margin: 30px 5px 0px 5px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#facebook {
-  background-image: url("http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico");
-}
-
-#twitter {
-  background-image: url("http://www.freeiconspng.com/uploads/twitter-icon-twitter-icon-7.png");
-}
-
-#linkedin {
-  background-image: url("https://pbs.twimg.com/profile_images/614583061448036352/CBpFkPaz.png");
-}
-
-.socialBtn a {
-  height: 50px;
-  width: 50px;
-  border: none;
-  margin: 30px 5px 0px 5px;
-}
-
-.socialBtn img {
-  height: 50px;
-  width: 50px;
-  border: none;
-  margin: 30px 5px 0px 5px;
-}
-
-.socialBtn p {
-  margin: 30px 0;
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  .jumboBanner .banner {
-    font-size: 42px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2fdda0;
   }
-}
-
-@media screen and (max-width: 500px) {
-  .serviceBlock {
-    margin-bottom: 20px;
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 兩列等寬 */
+    gap: 20px; /* 格子之間的間距 */
+    background-color: #aa1616;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(25, 25, 186, 0.1);
   }
-}
+  
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #cf5a1f;
+  }
+  
